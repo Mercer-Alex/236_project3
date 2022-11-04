@@ -1,0 +1,259 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: 236_project3
+# Configurations: Debug
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/alexmercer/CLionProjects/236_project3/cmake-build-debug/
+# =============================================================================
+# Object build statements for EXECUTABLE target 236_project3
+
+
+#############################################
+# Order-only phony target for 236_project3
+
+build cmake_object_order_depends_target_236_project3: phony || CMakeFiles/236_project3.dir
+
+build CMakeFiles/236_project3.dir/main.cpp.o: CXX_COMPILER__236_project3_Debug /Users/alexmercer/CLionProjects/236_project3/main.cpp || cmake_object_order_depends_target_236_project3
+  DEP_FILE = CMakeFiles/236_project3.dir/main.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/236_project3.dir
+  OBJECT_FILE_DIR = CMakeFiles/236_project3.dir
+
+build CMakeFiles/236_project3.dir/Automaton/AddAutomaton.cpp.o: CXX_COMPILER__236_project3_Debug /Users/alexmercer/CLionProjects/236_project3/Automaton/AddAutomaton.cpp || cmake_object_order_depends_target_236_project3
+  DEP_FILE = CMakeFiles/236_project3.dir/Automaton/AddAutomaton.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/236_project3.dir
+  OBJECT_FILE_DIR = CMakeFiles/236_project3.dir/Automaton
+
+build CMakeFiles/236_project3.dir/Automaton/ColonDashAutomaton.cpp.o: CXX_COMPILER__236_project3_Debug /Users/alexmercer/CLionProjects/236_project3/Automaton/ColonDashAutomaton.cpp || cmake_object_order_depends_target_236_project3
+  DEP_FILE = CMakeFiles/236_project3.dir/Automaton/ColonDashAutomaton.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/236_project3.dir
+  OBJECT_FILE_DIR = CMakeFiles/236_project3.dir/Automaton
+
+build CMakeFiles/236_project3.dir/Automaton/ColonAutomaton.cpp.o: CXX_COMPILER__236_project3_Debug /Users/alexmercer/CLionProjects/236_project3/Automaton/ColonAutomaton.cpp || cmake_object_order_depends_target_236_project3
+  DEP_FILE = CMakeFiles/236_project3.dir/Automaton/ColonAutomaton.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/236_project3.dir
+  OBJECT_FILE_DIR = CMakeFiles/236_project3.dir/Automaton
+
+build CMakeFiles/236_project3.dir/Automaton/CommaAutomaton.cpp.o: CXX_COMPILER__236_project3_Debug /Users/alexmercer/CLionProjects/236_project3/Automaton/CommaAutomaton.cpp || cmake_object_order_depends_target_236_project3
+  DEP_FILE = CMakeFiles/236_project3.dir/Automaton/CommaAutomaton.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/236_project3.dir
+  OBJECT_FILE_DIR = CMakeFiles/236_project3.dir/Automaton
+
+build CMakeFiles/236_project3.dir/Automaton/CommentAutomaton.cpp.o: CXX_COMPILER__236_project3_Debug /Users/alexmercer/CLionProjects/236_project3/Automaton/CommentAutomaton.cpp || cmake_object_order_depends_target_236_project3
+  DEP_FILE = CMakeFiles/236_project3.dir/Automaton/CommentAutomaton.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/236_project3.dir
+  OBJECT_FILE_DIR = CMakeFiles/236_project3.dir/Automaton
+
+build CMakeFiles/236_project3.dir/Automaton/CommentBlockAutomaton.cpp.o: CXX_COMPILER__236_project3_Debug /Users/alexmercer/CLionProjects/236_project3/Automaton/CommentBlockAutomaton.cpp || cmake_object_order_depends_target_236_project3
+  DEP_FILE = CMakeFiles/236_project3.dir/Automaton/CommentBlockAutomaton.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/236_project3.dir
+  OBJECT_FILE_DIR = CMakeFiles/236_project3.dir/Automaton
+
+build CMakeFiles/236_project3.dir/Automaton/FactsAutomaton.cpp.o: CXX_COMPILER__236_project3_Debug /Users/alexmercer/CLionProjects/236_project3/Automaton/FactsAutomaton.cpp || cmake_object_order_depends_target_236_project3
+  DEP_FILE = CMakeFiles/236_project3.dir/Automaton/FactsAutomaton.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/236_project3.dir
+  OBJECT_FILE_DIR = CMakeFiles/236_project3.dir/Automaton
+
+build CMakeFiles/236_project3.dir/Automaton/IdAutomaton.cpp.o: CXX_COMPILER__236_project3_Debug /Users/alexmercer/CLionProjects/236_project3/Automaton/IdAutomaton.cpp || cmake_object_order_depends_target_236_project3
+  DEP_FILE = CMakeFiles/236_project3.dir/Automaton/IdAutomaton.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/236_project3.dir
+  OBJECT_FILE_DIR = CMakeFiles/236_project3.dir/Automaton
+
+build CMakeFiles/236_project3.dir/Automaton/LeftPerenAutomaton.cpp.o: CXX_COMPILER__236_project3_Debug /Users/alexmercer/CLionProjects/236_project3/Automaton/LeftPerenAutomaton.cpp || cmake_object_order_depends_target_236_project3
+  DEP_FILE = CMakeFiles/236_project3.dir/Automaton/LeftPerenAutomaton.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/236_project3.dir
+  OBJECT_FILE_DIR = CMakeFiles/236_project3.dir/Automaton
+
+build CMakeFiles/236_project3.dir/Lexer.cpp.o: CXX_COMPILER__236_project3_Debug /Users/alexmercer/CLionProjects/236_project3/Lexer.cpp || cmake_object_order_depends_target_236_project3
+  DEP_FILE = CMakeFiles/236_project3.dir/Lexer.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/236_project3.dir
+  OBJECT_FILE_DIR = CMakeFiles/236_project3.dir
+
+build CMakeFiles/236_project3.dir/Automaton/MultiplyAutomaton.cpp.o: CXX_COMPILER__236_project3_Debug /Users/alexmercer/CLionProjects/236_project3/Automaton/MultiplyAutomaton.cpp || cmake_object_order_depends_target_236_project3
+  DEP_FILE = CMakeFiles/236_project3.dir/Automaton/MultiplyAutomaton.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/236_project3.dir
+  OBJECT_FILE_DIR = CMakeFiles/236_project3.dir/Automaton
+
+build CMakeFiles/236_project3.dir/Automaton/PeriodAutomaton.cpp.o: CXX_COMPILER__236_project3_Debug /Users/alexmercer/CLionProjects/236_project3/Automaton/PeriodAutomaton.cpp || cmake_object_order_depends_target_236_project3
+  DEP_FILE = CMakeFiles/236_project3.dir/Automaton/PeriodAutomaton.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/236_project3.dir
+  OBJECT_FILE_DIR = CMakeFiles/236_project3.dir/Automaton
+
+build CMakeFiles/236_project3.dir/Automaton/QMarkAutomaton.cpp.o: CXX_COMPILER__236_project3_Debug /Users/alexmercer/CLionProjects/236_project3/Automaton/QMarkAutomaton.cpp || cmake_object_order_depends_target_236_project3
+  DEP_FILE = CMakeFiles/236_project3.dir/Automaton/QMarkAutomaton.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/236_project3.dir
+  OBJECT_FILE_DIR = CMakeFiles/236_project3.dir/Automaton
+
+build CMakeFiles/236_project3.dir/Automaton/QueriesAutomaton.cpp.o: CXX_COMPILER__236_project3_Debug /Users/alexmercer/CLionProjects/236_project3/Automaton/QueriesAutomaton.cpp || cmake_object_order_depends_target_236_project3
+  DEP_FILE = CMakeFiles/236_project3.dir/Automaton/QueriesAutomaton.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/236_project3.dir
+  OBJECT_FILE_DIR = CMakeFiles/236_project3.dir/Automaton
+
+build CMakeFiles/236_project3.dir/Automaton/RightPerenAutomaton.cpp.o: CXX_COMPILER__236_project3_Debug /Users/alexmercer/CLionProjects/236_project3/Automaton/RightPerenAutomaton.cpp || cmake_object_order_depends_target_236_project3
+  DEP_FILE = CMakeFiles/236_project3.dir/Automaton/RightPerenAutomaton.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/236_project3.dir
+  OBJECT_FILE_DIR = CMakeFiles/236_project3.dir/Automaton
+
+build CMakeFiles/236_project3.dir/Automaton/RulesAutomoton.cpp.o: CXX_COMPILER__236_project3_Debug /Users/alexmercer/CLionProjects/236_project3/Automaton/RulesAutomoton.cpp || cmake_object_order_depends_target_236_project3
+  DEP_FILE = CMakeFiles/236_project3.dir/Automaton/RulesAutomoton.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/236_project3.dir
+  OBJECT_FILE_DIR = CMakeFiles/236_project3.dir/Automaton
+
+build CMakeFiles/236_project3.dir/Automaton/SchemesAutomaton.cpp.o: CXX_COMPILER__236_project3_Debug /Users/alexmercer/CLionProjects/236_project3/Automaton/SchemesAutomaton.cpp || cmake_object_order_depends_target_236_project3
+  DEP_FILE = CMakeFiles/236_project3.dir/Automaton/SchemesAutomaton.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/236_project3.dir
+  OBJECT_FILE_DIR = CMakeFiles/236_project3.dir/Automaton
+
+build CMakeFiles/236_project3.dir/Automaton/StringAutomaton.cpp.o: CXX_COMPILER__236_project3_Debug /Users/alexmercer/CLionProjects/236_project3/Automaton/StringAutomaton.cpp || cmake_object_order_depends_target_236_project3
+  DEP_FILE = CMakeFiles/236_project3.dir/Automaton/StringAutomaton.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/236_project3.dir
+  OBJECT_FILE_DIR = CMakeFiles/236_project3.dir/Automaton
+
+build CMakeFiles/236_project3.dir/Token.cpp.o: CXX_COMPILER__236_project3_Debug /Users/alexmercer/CLionProjects/236_project3/Token.cpp || cmake_object_order_depends_target_236_project3
+  DEP_FILE = CMakeFiles/236_project3.dir/Token.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/236_project3.dir
+  OBJECT_FILE_DIR = CMakeFiles/236_project3.dir
+
+build CMakeFiles/236_project3.dir/Parser.cpp.o: CXX_COMPILER__236_project3_Debug /Users/alexmercer/CLionProjects/236_project3/Parser.cpp || cmake_object_order_depends_target_236_project3
+  DEP_FILE = CMakeFiles/236_project3.dir/Parser.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/236_project3.dir
+  OBJECT_FILE_DIR = CMakeFiles/236_project3.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 236_project3
+
+
+#############################################
+# Link the executable 236_project3
+
+build 236_project3: CXX_EXECUTABLE_LINKER__236_project3_Debug CMakeFiles/236_project3.dir/main.cpp.o CMakeFiles/236_project3.dir/Automaton/AddAutomaton.cpp.o CMakeFiles/236_project3.dir/Automaton/ColonDashAutomaton.cpp.o CMakeFiles/236_project3.dir/Automaton/ColonAutomaton.cpp.o CMakeFiles/236_project3.dir/Automaton/CommaAutomaton.cpp.o CMakeFiles/236_project3.dir/Automaton/CommentAutomaton.cpp.o CMakeFiles/236_project3.dir/Automaton/CommentBlockAutomaton.cpp.o CMakeFiles/236_project3.dir/Automaton/FactsAutomaton.cpp.o CMakeFiles/236_project3.dir/Automaton/IdAutomaton.cpp.o CMakeFiles/236_project3.dir/Automaton/LeftPerenAutomaton.cpp.o CMakeFiles/236_project3.dir/Lexer.cpp.o CMakeFiles/236_project3.dir/Automaton/MultiplyAutomaton.cpp.o CMakeFiles/236_project3.dir/Automaton/PeriodAutomaton.cpp.o CMakeFiles/236_project3.dir/Automaton/QMarkAutomaton.cpp.o CMakeFiles/236_project3.dir/Automaton/QueriesAutomaton.cpp.o CMakeFiles/236_project3.dir/Automaton/RightPerenAutomaton.cpp.o CMakeFiles/236_project3.dir/Automaton/RulesAutomoton.cpp.o CMakeFiles/236_project3.dir/Automaton/SchemesAutomaton.cpp.o CMakeFiles/236_project3.dir/Automaton/StringAutomaton.cpp.o CMakeFiles/236_project3.dir/Token.cpp.o CMakeFiles/236_project3.dir/Parser.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/236_project3.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 236_project3
+  TARGET_PDB = 236_project3.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/alexmercer/CLionProjects/236_project3/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/alexmercer/CLionProjects/236_project3/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/alexmercer/CLionProjects/236_project3 -B/Users/alexmercer/CLionProjects/236_project3/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Target aliases.
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/alexmercer/CLionProjects/236_project3/cmake-build-debug
+
+build all: phony 236_project3
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build ../CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all
