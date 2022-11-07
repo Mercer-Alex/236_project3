@@ -20,7 +20,7 @@ $(buckets):
 	done \
 
 compile:
-	g++ -Wall -Werror -std=c++17 -g *.cpp -o lab$(NUM)
+	g++ -Wall -Werror -std=c++17 -g *.cpp */*.cpp -o lab$(NUM)
 
 test: compile
 	./lab3 input.txt > out.txt

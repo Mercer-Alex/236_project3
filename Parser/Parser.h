@@ -7,7 +7,7 @@
 
 
 #include "DatalogProgram.h"
-#include "Token.h"
+#include "../Token.h"
 #include "Predicate.h"
 #include "Rule.h"
 
@@ -27,7 +27,6 @@ public:
     Parser();
     ~Parser();
     std::string toString();
-//    DatalogProgram parse() {};
 
     void Match(TokenType correctToken);
 

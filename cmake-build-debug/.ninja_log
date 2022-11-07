@@ -1,4 +1,26 @@
 # ninja log v5
 2669	2731	1665508954854481823	236_project1	854afbee15b0cdae
-0	65	1667532688284022908	build.ninja	b2e6f87bf5738997
+0	65	1667859560578215138	build.ninja	b2e6f87bf5738997
 855	929	1665692321535582819	236_project2	77b8cd00d13bcd26
+1	744	1667860088176650348	CMakeFiles/236_project3.dir/Automaton/ColonDashAutomaton.cpp.o	e886214e268e292f
+0	747	1667860088176661390	CMakeFiles/236_project3.dir/Automaton/AddAutomaton.cpp.o	f6c29a7cfdf9514d
+2	748	1667860088176673848	CMakeFiles/236_project3.dir/Automaton/ColonAutomaton.cpp.o	6360541d8dc7bfb2
+2	749	1667860088176628181	CMakeFiles/236_project3.dir/Automaton/CommaAutomaton.cpp.o	9244f2a7760d1fa
+2	749	1667860088176676598	CMakeFiles/236_project3.dir/Automaton/CommentAutomaton.cpp.o	4166b752fd886de6
+0	1035	1667860088468399858	CMakeFiles/236_project3.dir/main.cpp.o	18f4bebd770eeac7
+749	1304	1667860088742420278	CMakeFiles/236_project3.dir/Automaton/LeftPerenAutomaton.cpp.o	ebed7223568d7267
+748	1309	1667860088748354905	CMakeFiles/236_project3.dir/Automaton/IdAutomaton.cpp.o	caef3310174863c5
+746	1313	1667860088752066157	CMakeFiles/236_project3.dir/Automaton/CommentBlockAutomaton.cpp.o	79c3156e5293f8b2
+747	1318	1667860088757288825	CMakeFiles/236_project3.dir/Automaton/FactsAutomaton.cpp.o	8659921e4f1d02cc
+749	1428	1667860088862335442	CMakeFiles/236_project3.dir/Lexer.cpp.o	cffc6868d9f38c00
+1035	1596	1667860089022017034	CMakeFiles/236_project3.dir/Automaton/MultiplyAutomaton.cpp.o	e7521fd3f0203866
+1305	1815	1667860089253670567	CMakeFiles/236_project3.dir/Automaton/PeriodAutomaton.cpp.o	ce14a907b3b29a33
+1309	1829	1667860089266643779	CMakeFiles/236_project3.dir/Automaton/QMarkAutomaton.cpp.o	b91fd1d7daa9487d
+1313	1830	1667860089267925154	CMakeFiles/236_project3.dir/Automaton/QueriesAutomaton.cpp.o	bf34e33715dc967c
+1318	1840	1667860089275764157	CMakeFiles/236_project3.dir/Automaton/RightPerenAutomaton.cpp.o	3acb5a80678e9182
+1428	1946	1667860089384502567	CMakeFiles/236_project3.dir/Automaton/RulesAutomoton.cpp.o	eb995bc809a549f0
+1596	2095	1667860089533731198	CMakeFiles/236_project3.dir/Automaton/SchemesAutomaton.cpp.o	9f978b490dd5e213
+1815	2235	1667860089675070993	CMakeFiles/236_project3.dir/Automaton/StringAutomaton.cpp.o	c02b01bf424d11a3
+1829	2256	1667860089696110458	CMakeFiles/236_project3.dir/Token.cpp.o	f0ff61ca04f32ce2
+1830	2419	1667860089859373968	CMakeFiles/236_project3.dir/Parser/Parser.cpp.o	283fae4006e36ea2
+2419	2473	1667860089915464903	236_project3	4543720e29402a82
