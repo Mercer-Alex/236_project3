@@ -258,6 +258,10 @@ void Parser::parseOperator() {
     }
 }
 
+const DatalogProgram &Parser::getDatalogProgram() const {
+    return datalogProgram;
+}
+
 
 
 

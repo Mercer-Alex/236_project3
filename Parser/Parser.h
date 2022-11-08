@@ -53,6 +53,8 @@ public:
     void parseOperator();
 
     void parse(std::vector<Token*> tokens);
+
+    const DatalogProgram &getDatalogProgram() const;
 };
 
 #endif // PARSER_H

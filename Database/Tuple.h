@@ -24,12 +24,17 @@ public:
         return values;
     }
 
-    void setValues(const std::vector<std::string> &values) {
-        Tuple::values = values;
+    void addValue(std::string value) {
+        values.push_back(value);
     }
 
     std::string toString() {
-        return "(" + values[0] + ", " + values[1] + ")";
+        std::ostringstream os;
+
+        for (auto val : values) {
+            os << val;
+        }
+        return os.str();
     }
 };
 

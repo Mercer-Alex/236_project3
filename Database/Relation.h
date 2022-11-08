@@ -27,8 +27,12 @@ public:
         return name;
     }
 
-    void setName(const std::string &name) {
-        Relation::name = name;
+    void setName(const std::string newName) {
+        name = newName;
+    }
+
+    void setHeader(const Header col) {
+        columnNames = col;
     }
 
     void addTuples(Tuple tuple) {
@@ -39,19 +43,18 @@ public:
         std::ostringstream os;
 
         for(auto tuple : tuples) {
-            os << tuple.toString() << ", ";
+            os << name << std::endl << tuple.toString() << std::endl;
         }
-
         return os.str();
     }
 
-    Relation select(int indexCol, std::string value) {}
+    Relation select(int indexCol, std::string value);
 
-    Relation select(int indexColOne, int indexColTwo ) {}
+    Relation select(int indexColOne, int indexColTwo );
 
-    Relation project(std::vector<int> columnsProj) {}
+    Relation project(std::vector<int> columnsProj);
 
-    Relation rename(std::vector<std::string> newColName) {}
+    Relation rename(std::vector<std::string> newColName);
 
 };
 

@@ -35,6 +35,22 @@ public:
         queries.push_back(predicate);
     }
 
+    const std::vector<Predicate> &getSchemes() const {
+        return schemes;
+    }
+
+    const std::vector<Predicate> &getFacts() const {
+        return facts;
+    }
+
+    const std::vector<Rule> &getRules() const {
+        return rules;
+    }
+
+    const std::vector<Predicate> &getQueries() const {
+        return queries;
+    }
+
     std::set<std::string> domain;
 
     void getDomain() {
@@ -84,6 +100,5 @@ public:
         return os.str();
     }
 };
-
 
 #endif // DATALOGPROGRAM_H

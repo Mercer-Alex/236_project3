@@ -1,5 +1,6 @@
 #include "Lexer.h"
 #include "Token.h"
+#include "Interpreter.h"
 #include "Parser/Parser.h"
 #include <string>
 #include <fstream>
@@ -22,13 +23,15 @@ int main(int argc, char** argv) {
     Parser* parser = new Parser();
     try {
         parser->parse(tokens);
-        std::cout<< "Success!" << std::endl;
-        std::cout << parser->toString();
 
     } catch (Token* token) {
         std::cout << "  Failure! " << std::endl << token->toString() << std::endl;
     }
 
+    Interpreter* interpreter = new Interpreter();
+    interpreter->interpret(parser->getDatalogProgram());
+
+    delete interpreter;
     delete lexer;
     delete parser;
 

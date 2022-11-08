@@ -19,10 +19,9 @@ public:
         return attributes;
     }
 
-    void setAttributes(const std::vector<std::string> &attributes) {
-        Header::attributes = attributes;
+    void push_back(const std::string &basicString) {
+        attributes.push_back(basicString);
     }
-
 };
 
 
