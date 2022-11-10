@@ -21,7 +21,9 @@ public:
     void interpret(DatalogProgram datalogProgram);
     void interpretSchemes();
     void interpretFacts();
-    void interepretQueries();
+    void interpretQueries();
+
+    Relation evaluatePredicate(Predicate p);
 };
 
 

@@ -42,20 +42,93 @@ public:
     std::string toString() {
         std::ostringstream os;
 
-        for(auto tuple : tuples) {
-            os << name << std::endl << tuple.toString() << std::endl;
+        if (this->tuples.empty())
+        {
+            os << "? No" << std::endl;
+        }
+        else {
+            os << "? Yes(" << this->tuples.size() << ")" << std::endl;
+
+            for (auto tuple: tuples) {
+                if (tuple.getValues().size() != 0) {
+                    os << "  ";
+                    for (int i = 0; i < this->columnNames.getAttributes().size(); ++i) {
+                        os << this->columnNames.getAttributes()[i] << "=" << tuple.getValues().at(i);
+                        if (i != columnNames.getAttributes().size() - 1) {
+                            os << ", ";
+                        }
+                    }
+                    os << std::endl;
+                }
+            }
         }
         return os.str();
     }
 
-    Relation select(int indexCol, std::string value);
 
-    Relation select(int indexColOne, int indexColTwo );
+    Relation selectConst(int indexCol, std::string value) {
+        Relation newRel = Relation();
+        newRel.name = this->name;
+        newRel.columnNames = this->columnNames;
 
-    Relation project(std::vector<int> columnsProj);
+        for (Tuple t : this->tuples) {
+            if (t.getValues().at(indexCol) == value) {
+                newRel.addTuples(t);
+            }
+        }
+        return newRel;
+    }
 
-    Relation rename(std::vector<std::string> newColName);
+    Relation selectVar(int indexColOne, int indexColTwo ) {
+        Relation newRel = Relation();
 
+        newRel.name = this->name;
+        newRel.columnNames = this->columnNames;
+
+        for (Tuple t : tuples) {
+            if(t.getValues().at(indexColOne) == t.getValues().at(indexColTwo)) {
+                newRel.addTuples(t);
+            }
+        }
+
+        return newRel;
+    }
+
+    Relation project(std::vector<int> columnsProj) {
+        Relation newRel = Relation();
+
+        Header keepCol;
+        for(auto & i : columnsProj) {
+            keepCol.push_back(this->columnNames.getAttributes()[i]);
+        }
+
+        newRel.name = this->name;
+        newRel.columnNames = keepCol;
+
+        for (Tuple t : tuples) {
+            Tuple temp;
+            for (int i = 0; i < columnsProj.size(); ++i) {
+                temp.addValue(t.getValues().at(columnsProj[i]));
+            }
+            newRel.addTuples(temp);
+        }
+
+        return newRel;
+    }
+
+    Relation rename(std::vector<std::string> newColName) {
+        Header tempHeaders;
+        Relation newRel = Relation();
+
+        for(auto & i : newColName) {
+            tempHeaders.push_back(i);
+        }
+
+        newRel.columnNames = tempHeaders;
+        newRel.name = this->name;
+        newRel.tuples = this->tuples;
+        return newRel;
+    }
 };
 
 

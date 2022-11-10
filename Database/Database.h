@@ -22,10 +22,14 @@ public:
         return relation;
     }
 
+    Relation getCopy(std::string relationName) {
+        return *relations.at(relationName);
+    }
+
     std::string toString() {
         std::stringstream ss;
         for (auto &relation: relations) {
-                ss << relation.second->toString();
+            ss << relation.second->toString();
         }
         return ss.str();
     }

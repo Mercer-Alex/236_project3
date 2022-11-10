@@ -19,8 +19,8 @@ public:
         return attributes;
     }
 
-    void push_back(const std::string &basicString) {
-        attributes.push_back(basicString);
+    void push_back(const std::string newHeader) {
+        attributes.push_back(newHeader);
     }
 };
 
